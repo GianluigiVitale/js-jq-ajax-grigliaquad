@@ -5,7 +5,15 @@ Il numero ottenuto appare al centro del quadrato.
 */
 $(document).ready(function() {
 
-    $(document).on('click', '.quadrato', function() {       // al click di .quadrato funzione ajax che genera un numero da 1 a 9
+    var source = $('#quadrato-template').html();              // clono il template messaggio
+    var template = Handlebars.compile(source);                 // do in pasto ad Handlebars il template clonato
+
+    for (var i = 0; i < 36; i++) {      // clono il template 36 volte
+        $('.box').append(template);
+    };
+
+
+    $('.quadrato').click(function() {
         $.ajax({
             context: this,
             url: 'https://flynn.boolean.careers/exercises/api/random/int',
@@ -18,13 +26,9 @@ $(document).ready(function() {
                 } else {
                     $(this).addClass('green');
                 }
-            },
-            error: function() {
-
             }
         });
     });
-
 
 
     $('button').click(function() {                  // al click del pulsante resetto la griglia (elimino il numero e lo sfondo di tutti i quadrati)

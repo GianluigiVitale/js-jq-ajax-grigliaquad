@@ -12,128 +12,18 @@
         <script src="js/main.js" charset="utf-8"></script>
     </head>
     <body>
-         <div class="container">    <!-- Container generale centrato al centro -->
+        <div class="container">    <!-- Container generale centrato al centro -->
             <button type="button" name="button">RESET</button>      <!-- Bottone per resettare griglia -->
-            <div class="row">       <!-- Riga contenente 6 quadrati uno affianco all'altro -->
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-            </div>
-            <div class="row">       <!-- Riga contenente 6 quadrati uno affianco all'altro -->
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-            </div>
-            <div class="row">       <!-- Riga contenente 6 quadrati uno affianco all'altro -->
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-            </div>
-            <div class="row">       <!-- Riga contenente 6 quadrati uno affianco all'altro -->
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-            </div>
-            <div class="row">       <!-- Riga contenente 6 quadrati uno affianco all'altro -->
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-            </div>
-            <div class="row">       <!-- Riga contenente 6 quadrati uno affianco all'altro -->
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-                <div class="quadrato">
-                    <p></p>
-                </div>
-            </div>
+            <div class="box"></div>     <!-- A questo box si aggiungono i 36 cubi generati da handlebars -->
         </div>
+
+
+
+        <script id="quadrato-template" type="text/x-handlebars-template">      <!-- 'Handlebars' Template generico che viene applicato a ogni quadrato -->
+            <div class="quadrato">
+                <p></p>
+            </div>
+        </script>
+
     </body>
 </html>

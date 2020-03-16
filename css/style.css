@@ -8,6 +8,12 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 .container {
     height: 100vh;
     display: flex;
@@ -16,21 +22,26 @@ body {
     align-items: center;
 }
 
-.row {
-    display: flex;
+.box {
+    width: 300px;
+    height: 300px;
 }
 
 .quadrato {
-    position: relative;
     cursor: pointer;
-    padding: 25px;
+    position: relative;
+    width: calc(100% / 6);
+    height: calc(100% / 6);
+    float: left;
     border: 1px solid black;
     font-size: 16px;
 }
 
 .quadrato p {
     position: absolute;
-    transform: translate(-50%,-50%)
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 button {
