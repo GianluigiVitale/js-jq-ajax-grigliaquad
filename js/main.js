@@ -12,8 +12,12 @@ $(document).ready(function() {
             method: 'GET',
             success: function(data) {
                 var prova = $(this).children('p').text(data.response);
-                // console.log(prova);
-                // // console.log(data.response);
+                $(this).removeClass('yellow green');
+                if (data.response <= 5) {
+                    $(this).addClass('yellow');
+                } else {
+                    $(this).addClass('green');
+                }
             },
             error: function() {
 
