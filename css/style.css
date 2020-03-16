@@ -33,14 +33,6 @@ body {
     transform: translate(-50%,-50%)
 }
 
-.yellow {
-    background-color: yellow;
-}
-
-.green {
-    background-color: green;
-}
-
 button {
     margin-bottom: 15px;
     padding: 15px 25px;
@@ -48,3 +40,14 @@ button {
     color: white;
     border-radius: 15px;
 }
+
+
+/* classi che eventualmente si aggiungono grazie a js */
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+/* end */
