@@ -25,6 +25,11 @@ $(document).ready(function() {
         });
     });
 
+    $('button').click(function() {
+        $('.quadrato').removeClass('yellow green');
+        $('.quadrato p').empty()
+    });
+
     // $(document).on('click', '.quadrato', function() {
     //     var prova = $(this).children('p').text();
     //     console.log(prova);
