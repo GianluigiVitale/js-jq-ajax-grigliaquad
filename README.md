@@ -10,4 +10,8 @@ Used handlebars library to create the squares.
 ### [Live Website](https://gianluigivitale.github.io/js-jq-ajax-grigliaquad/)
 ***
 ### Preview:
+Ajax request:  
+![Preview](img/ajax.jpg "Preview")  
+
+Preview:  
 ![Preview](img/preview.jpg "Preview")
